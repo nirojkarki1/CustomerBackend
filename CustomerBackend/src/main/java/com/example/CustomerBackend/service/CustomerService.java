@@ -43,6 +43,7 @@ public class CustomerService {
         existingCustomer.setName(customer.getName());
         existingCustomer.setEmail(customer.getEmail());
         existingCustomer.setGender(customer.getGender());
+        existingCustomer.setDependentList(customer.getDependentList());
         return customerRepository.save(existingCustomer);
     }
 

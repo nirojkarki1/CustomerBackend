@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Entity
 public class Dependent {
     @Id
@@ -16,5 +15,8 @@ public class Dependent {
     private String name;
     private String  email;
     private String gender;
+    private int cp_fk;
 
+    public Dependent() {
+    }
 }
